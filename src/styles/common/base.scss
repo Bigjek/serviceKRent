@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    @include opensans(l);
+    font-size: 24px;
+    @include desktop{
+        width: 1440px;
+    }
+}
+body{
+    background-size: 100%;
+}
+h1{
+    @include opensans(exb);
+    text-transform: uppercase;
+    font-size: 48px;
+}
+strong{
+    font-weight: bold;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}

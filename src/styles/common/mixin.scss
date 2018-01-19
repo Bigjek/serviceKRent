@@ -1,0 +1,25 @@
+@mixin opensans($style : r){
+    font-family: 'Open Sans', sans-serif;
+    @if $style == r {
+        font-style: normal;
+        font-weight: 400;
+    }
+    @if $style == l {
+        font-style: normal;
+        font-weight: 300;
+    }
+    @if $style == b {
+        font-style: normal;
+        font-weight: 700;
+    }
+    @if $style == exb {
+        font-style: normal;
+        font-weight: 800;
+    }
+}
+
+@mixin desktop{
+    @media (max-width: 1200px){
+        @content;
+    }
+}

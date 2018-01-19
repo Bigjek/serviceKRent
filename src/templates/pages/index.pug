@@ -1,0 +1,40 @@
+extends ../template
+
+block variables
+  - var title = 'Ремонт фотообъективов Canon, Nikon, Carl Zeiss в одно касание.'
+
+block content
+  section.main-i 
+    .main-i__left.main-i__left_img-bg
+      .main-i__left-block
+        .text-block
+          h1 Kino.rent <br> service
+          br
+          p Ремонт фотообъективов Canon, Nikon, Carl Zeiss в одно касание. 
+          br
+          p Сайт запустится <strong> 15.02</strong>, а мы уже вовсю чиним!
+          br
+        .contact-block
+          ul.text-conts
+            li.text-conts__list
+                a.text-conts__item(href="tel:+78123171706" type="tel")
+                    svg(class="icon-white" width="20" height="20")
+                        use(xlink:href="./assets/img/sprite.svg#call")  
+                    span +7 (812) 317–17–06
+            li.text-conts__list
+                a.text-conts__item(href="mailto:service@kino.rent" type="email")
+                    svg(class="icon-white" width="20" height="20")
+                        use(xlink:href="./assets/img/sprite.svg#mail")  
+                    span service@kino.rent
+            li.text-conts__list
+                a.text-conts__item(href="javascript:void(0);")
+                    svg(class="icon-white" width="20" height="20")
+                        use(xlink:href="./assets/img/sprite.svg#addres")  
+                    span Каменноостровский пр., 26-28
+            li.text-conts__list
+                a.text-conts__item(href="javascript:void(0);")
+                    svg(class="icon-white" width="20" height="20")
+                        use(xlink:href="./assets/img/sprite.svg#time")  
+                    span Ежедневно с 10:00 до 22:00
+    .main-i__right
+      .main-i__right-block.main-i__right-block_img-bg

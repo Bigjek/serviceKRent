@@ -1,0 +1,73 @@
+.main-i{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    @include desktop{
+        width: 100%;
+    } 
+    &__left{
+        width: 50%;
+        padding: 40px 0 40px 40px;
+        display: flex;
+        
+        &_img-bg{
+            background: url('../img/re.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &-block{
+            background: #fff;
+            width: 100%;
+            padding: 80px 50px 50px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__right{
+        width: 50%;
+        padding: 40px 40px 40px 0px;
+        display: flex;
+        &-block{
+            display: flex;
+            width: 100%;
+            &_img-bg{
+                background: url('../img/re.jpg') no-repeat;
+                background-size: cover;
+                background-position: center 68%;
+            }
+        }
+    }
+}
+
+.text{
+    &-conts{
+        list-style: none;
+        padding: 0;
+        padding-bottom: 20px;
+        &__list{
+            padding: 5px 0px;
+            line-height: 34px;
+        }
+        &__item{
+            color: currentColor;
+            display: flex;
+            text-decoration: none; 
+            align-items: center;
+            span{
+                font-size: 1em;
+                padding-left: 25px;
+            }
+        }
+        &_mod{
+            .text-conts__item{
+                span{
+                    font-size: 1em;
+                }
+            }
+            .text-conts__list {
+                padding: 10px 0px;
+            }
+        }
+    }
+}
