@@ -17,7 +17,11 @@
         font-weight: 800;
     }
 }
-
+@mixin max1600{
+    @media (max-width: 1600px) and (min-width: 1200px){
+        @content;
+    }
+}
 @mixin desktop{
     @media (max-width: 1200px){
         @content;
